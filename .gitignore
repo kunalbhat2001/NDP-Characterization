@@ -1,0 +1,32 @@
+# Intel Pin kit (third-party, prebuilt binaries) -- download separately, see README
+pin-*/
+
+# Pin tool build outputs
+obj-intel64/
+obj-ia32/
+*.o
+*.so
+*.a
+pintool.log
+
+# Benchmark binaries (built from source via each benchmark's Makefile)
+benchmarks/toy_bfs/toy_bfs
+benchmarks/toy_bfs/gen_graph
+benchmarks/toy_bfs/gen_graph_large
+benchmarks/toy_cc/toy_cc
+benchmarks/toy_cxl_stream/toy_cxl_stream
+benchmarks/toy_masstree/toy_masstree
+benchmarks/toy_pr/toy_pr
+benchmarks/toy_rag/toy_rag
+benchmarks/toy_rag/gen_rag_db
+benchmarks/toy_sssp/toy_sssp
+benchmarks/toy_tc/toy_tc
+
+# Large generated datasets (graphs are 47-277 GB, RAG db ~8.6 GB)
+*.bin
+benchmarks/toy_bfs/graph*
+
+# Python / editor cruft
+__pycache__/
+*.pyc
+.vscode/

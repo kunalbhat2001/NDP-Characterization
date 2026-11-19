@@ -1,0 +1,11 @@
+# Build rules for the func_cache_sim Pin tool.
+# Build:  make PIN_ROOT=../../pin-3.30-98830-g1d7b601b3-gcc-linux obj-intel64/func_cache_sim.so
+TEST_TOOL_ROOTS := func_cache_sim
+TEST_ROOTS :=
+TOOL_ROOTS :=
+SA_TOOL_ROOTS :=
+APP_ROOTS :=
+OBJECT_ROOTS :=
+DLL_ROOTS :=
+LIB_ROOTS :=
+SANITY_SUBSET := $(TEST_TOOL_ROOTS)
